@@ -30,12 +30,11 @@ export default function Details({ selectedItem }) {
     const jsonData = await data.json();
     console.log(jsonData);
     setItem(jsonData);
-    console.log(item?.avatar);
   }
 
   return (
     <div className="details">
-      <img src={item != null && item.avatar} alt="" />
+      <img src={item != null && `${item.avatar}?=${Date.now()}`} alt={item.name} />
       <div className="detail">{item != null && item.name}</div>
       <div className="detail">{item != null && item.details.city}</div>
       <div className="detail">{item != null && item.details.company}</div>
