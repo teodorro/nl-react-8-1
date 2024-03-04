@@ -12,14 +12,14 @@
 
 .list__container {
   width: 400px;
-  height: 400px;
+  height: 600px;
   border: 1px solid #a00;
   padding: 0em 0.5em;
   border-radius: 0.5em;
 }
 .list {
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .list__item {
@@ -34,7 +34,7 @@
 
 .details__container {
   width: 400px;
-  height: 400px;
+  height: 600px;
   border: 1px solid #0a0;
 }
 
@@ -46,15 +46,4 @@
   padding: 0.5em 0.5em;
   text-align: left;
   font-size: 14pt;
-}
-.details__name {
-}
-
-.details__city {
-}
-
-.details__company {
-}
-
-.details__position {
 }

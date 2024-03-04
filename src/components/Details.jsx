@@ -36,9 +36,9 @@ export default function Details({ selectedItem }) {
     <div className="details">
       <img src={item != null && `${item.avatar}?=${Date.now()}`} alt={item.name} />
       <div className="detail">{item != null && item.name}</div>
-      <div className="detail">{item != null && item.details.city}</div>
-      <div className="detail">{item != null && item.details.company}</div>
-      <div className="detail">{item != null && item.details.position}</div>
+      <div className="detail">{item != null && `City: ${item.details.city}`}</div>
+      <div className="detail">{item != null && `Company: ${item.details.company}`}</div>
+      <div className="detail">{item != null && `Position: ${item.details.position}`}</div>
     </div>
   );
 }

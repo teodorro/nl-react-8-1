@@ -9,7 +9,6 @@ export default function List({ list, selectItem }) {
             <div key={item.id}
             className="list__item"
             onClick={() => {
-              console.log(item);
               selectItem(item);
             }}
             >{item.name}</div>
